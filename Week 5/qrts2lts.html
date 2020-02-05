@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarts to Liters</title>
+    <script>
+        //Write a defining table and a JavaScript program that asks a user for a volume in quarts 
+        //and then converts that value into liters. 
+        //Your program should correctly handle real numbers such as 7.54.
+
+        /*Input: quarts
+         *Processing: Calculate the amount of quarts there are into liters
+         *Formula: 1 qrt x .94645 L/ 1 qrt = liters
+         *Output: liters
+         */
+
+
+        function quartsToLiters() {
+            // get the numuber of quarts from the user
+            var quarts = parseFloat(document.getElementById("quartsInput").value)
+            //do the math
+            let liters = quarts / 1.0567
+            document.getElementById("output").innerHTML = liters
+
+        }
+    </script>
+</head>
+
+<body>
+    <p>Enter quarts value: <input type="text" id="quartsInput"></p>
+    <button type="button" onclick="quartsToLiters()">Equal to in Liters</button>
+    <div id="output"></div>
+</body>
+
+</html>
