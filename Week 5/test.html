@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Price Change</title>
+    <script>
+        function calculatePriceChange() {
+            let currentPrice = parseFloat(document.getElementById("currentPrice").value);
+
+            let previousPrice = parseFloat(document.getElementById("previousPrice").value);
+
+            let rateOfChange = (currentPrice - previousPrice) / previousPrice;
+
+            document.getElementById("rateOfChange").innerHTML = rateOfChange
+        }
+    </script>
+</head>
+
+<body>
+
+    <div>Current Price: <input type="text" id="currentPrice"></div>
+    <div>Previous Price: <input type="text" id="previousPrice"></div>
+    <div><button type="button" onclick="calculatePriceChange()">Rate of Change</button></div>
+    <div id="rateOfChange"></div>
+</body>
+
+</html>

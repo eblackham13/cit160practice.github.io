@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Volume of a Torus</title>
+    <script>
+        // Your JavaScript function belongs here.
+        //where v is the volume, π is the constant pi, a is the inner radius, and b is the outer radius. 
+        //Your program should allow a user to enter real numbers such as 7.54
+        // v = (n^2(a+b)(a-b)^2)/4
+        function computeVolume() {
+            let a = parseFloat(document.getElementById("inner").value);
+            let b = parseFloat(document.getElementById("outer").value);
+            let c = (a - b) * (a - b);
+            let d = Math.pow(Math.PI,2);
+            //compute
+            let volume = d * (a + b) * c / 4;
+            document.getElementById("volume").innerHTML = volume
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Volume of a Torus</h1>
+    Inner radius <input type="text" id="inner"><br>
+    Outer radius <input type="text" id="outer"><br>
+    <button type="button" onclick="computeVolume()">Volume</button><br>
+    <div id="volume"></div>
+</body>
+
+</html>
