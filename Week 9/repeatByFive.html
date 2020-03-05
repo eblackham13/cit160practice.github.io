@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Count By Fives</title>
+    <script>
+        /* Write a defining table and a program to display the five times table 
+        from 1 to 12 in this format:
+        5 x 1 = 5
+        5 x 2 = 10
+        . . . 
+        5 x 12 = 60
+        */
+
+        function fiveTimesTable() {
+
+            var output = "";
+            var i = 1;
+            var answer = 0;
+            while (answer < 60) {
+                answer = i * 5;
+                output += "5 X " + i + " = " + answer + "<br>";
+                i++;
+            }
+
+            document.getElementById("output").innerHTML = output;
+        }
+    </script>
+
+</head>
+
+<body>
+    <button type="button" onclick="fiveTimesTable()">The five times table is:</button>
+    <div id="output"></div>
+
+</body>
+
+</html>
