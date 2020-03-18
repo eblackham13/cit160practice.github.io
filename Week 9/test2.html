@@ -20,8 +20,11 @@
             let divisor = parseInt(document.getElementById("divisor").value);
             let output = ""
             while (start <= end) {
-                start / divisor;
-                output += " " + start++ ;
+                var answer = start / divisor;
+                if(Number.isInteger(answer)){
+                output += " " + start ;
+                }
+                start++; 
             }
             
 
