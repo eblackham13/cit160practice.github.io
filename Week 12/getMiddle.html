@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sum of First and Last</title>
+    <script>
+        function getMiddle(list) {
+            if (list.length % 2 == 0) {
+                return (list[list.length / 2] + list[(list.length / 2) - 1]) / 2;
+            } else {
+                return list[Math.floor(list.length / 2)];
+            }
+        }
+        alert(getMiddle([17, 8, 9, 5, 20]));
+        alert(getMiddle([12, 4, 8, 15, 17, 5, 20, 11]));
+        alert(getMiddle([1, 2, 3, 4, 4, 5, 6]))
+    </script>
+</head>
+
+<body>
+    <!-- stuff that would normally be here but doesn't need to be because we only need to submit the function</div> -->
+
+</body>
+
+</html>
