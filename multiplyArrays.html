@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function multiply(list, multiplier) {
+            var total = new Array();
+            console.log(list.length);
+            for (var i = 0; i < list.length; i++) {
+                var product = list[i] * multiplier;
+                total[i] = product;
+
+            }
+            return total;
+        }
+        var list = [17, 8, 9, 5, 20];
+        var multiplier = 3;
+        var product = multiply(list, multiplier);
+        alert(product);
+    </script>
+
+</head>
+
+<body>
+    <!--
+    <h1>Header goes here</h1>
+    <button type="button" onclick=multiply(list, multiplier)>sometimes a button</button>
+-->
+</body>
+
+</html>

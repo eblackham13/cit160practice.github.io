@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function countEvens(list) {
+            var total = 0;
+            console.log(list.length);
+            for (var i = 0; i < list.length; i++) {
+                if (list[i] % 2 == 0) {
+                    total += 1;
+                }
+            }
+            return total;
+        }
+        console.log(countEvens([17, 8, 9, 5, 20]));
+    </script>
+</head>
+
+<body>
+    <!--
+    <h1>Header goes here</h1>
+    <button type="button" onclick=countEvens(list)>sometimes a button</button>
+-->
+</body>
+
+</html>
